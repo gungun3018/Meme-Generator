@@ -1,0 +1,188 @@
+
+/* entire html page */
+*{
+  box-sizing: border-box;
+}
+html{
+  background-color: rgb(228, 228, 228);
+  height: 100vh;
+  width: 100vw;
+}
+
+/* add media queries in this website to make this responsive */
+body{
+
+    height : 95vh ;
+    width: 75vw ;
+    margin-top : 2vh ; 
+    margin-left: 12.5vw;
+    background-color: white;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 225, 0.4));
+    /* box-shadow: 3px 3px 10px rgb(131, 131, 238 , 0.5); */
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+      /* height : 95vh ;  */
+      width: 50vw;
+      margin-left: 25vw;
+    }
+
+
+    /* .image{
+      /* object-fit: fill; */
+      /* margin-bottom: 3%;  */
+      /* margin-top : 3% ;  */
+      /* height : 45vh ; */
+      /* margin-left: 2%;  */
+      /* width :  */
+    /* }  */
+}
+
+
+/* header css */
+.header{
+  background :linear-gradient(to right , rgb(147, 76, 209) , rgb(223, 200, 243)) ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height : 80px ; 
+  padding: 20px;
+}
+
+.logo{
+  width : auto ; 
+  
+  height: 29px ;
+  
+}
+.date-header{
+  border-radius: 50px;
+  background-color: rgb(240, 243, 235);
+  color : black;
+  padding : 10px 20px ; 
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Meme css */
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto ;
+  padding : 3vh ; 
+  row-gap: 5vh ;
+  column-gap: 2vh;
+  margin-left: 4vh;
+  margin-right: 4.1vh;
+  font-size: large;
+}
+
+.top-text{
+  font-size: small;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5svh;
+}
+
+
+.grid-container > button{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding : 1vh ; 
+  height : 8vh; 
+  border-radius: 8px;
+  background :linear-gradient(to right , rgb(147, 76, 209) , rgb(223, 200, 243)) ;
+  border-color: rgb(202, 172, 228) ; 
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color : whitesmoke ; 
+  font-size: large;
+  /* display: flex; */
+  /* margin-right: 4.1vh; */
+}
+
+/* .grid-container > img{
+  margin-top: 4%;
+  padding : -40px ; 
+  /* margin-bottom: */
+ /* grid-column-start: 1;
+  grid-column-end: 3;
+  height : 55% ;
+  border-radius: 10px; 
+  width: 100%;
+
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 225, 0.4));
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) */
+
+  /* margin-right: 4vh ; */
+
+
+.meme {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto ;
+  margin-left: 4vh;
+  margin-right: 4.1vh;
+  margin-bottom: 4vh !important ;
+}
+
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+  margin-top: 4%;
+  padding : -40px ; 
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height : 55% ;
+  border-radius: 10px; 
+  width: 100%;
+  margin-bottom: 7%;
+  height: 45vh;
+
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 225, 0.4));
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  top : 40vh ; 
+}
+
+.top {
+ position: absolute;
+ top : 5vh ;
+}
